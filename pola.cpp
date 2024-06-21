@@ -1,6 +1,9 @@
 #include "pola.h"
 #include <cmath>
 
-double squareArea(double dlugoscBoku) {
+double poleKwadratu (double dlugoscBoku) {
     return std::pow(dlugoscBoku, 2);
+}
+double  poleProstokata(double pierwszyBok, double drugiBok) {
+    return pierwszyBok * drugiBok;
 }
