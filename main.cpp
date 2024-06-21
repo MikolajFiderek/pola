@@ -11,7 +11,8 @@ int main() {
         cout << "Co chcesz obliczyc?"<<endl;
         cout << "1. Pole kwadratu"<<endl;
         cout << "2. Pole prostokata"<<endl;
-        cout << "Wybierz opcje (1-2): ";
+        cout << "3. Pole kola"<<endl;
+        cout << "Wybierz opcje (1-3): ";
         cin >> choice;
 
             switch (choice) {
@@ -27,6 +28,14 @@ int main() {
                     cout << "Wprowadz dlugosc drugiego boku: ";
                     cin >> drugiBok;
                     cout << "Pole prostokata: " << poleProstokata(pierwszyBok, drugiBok) <<endl;
+                    break;
+                }
+
+                case 3: {
+                    double promien;
+                    cout << "Podaj promien kola: ";
+                    cin >> promien;
+                    cout << "Pole kola: " << poleKola(promien) <<endl;
                     break;
                 }
                 default:
